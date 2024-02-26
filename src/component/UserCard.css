@@ -1,0 +1,42 @@
+.card {
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dddfe2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.ProfileImage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 20px auto 10px;
+}
+
+.ProfileName {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ProfileEmail,
+.ProfileLocation,
+.ProfilePhone {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #1c1e21; 
+}
+
+.ProfileEmail::before,
+.ProfileLocation::before,
+.ProfilePhone::before {
+  content: '\2022'; 
+  margin-right: 5px;
+}
