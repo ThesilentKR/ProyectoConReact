@@ -6,6 +6,11 @@
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); 
 }
 
 .card-body {
@@ -18,12 +23,14 @@
   height: 150px;
   object-fit: cover;
   margin: 20px auto 10px;
+  border: 5px solid #1877f2; 
 }
 
 .ProfileName {
   margin-top: 10px;
   font-size: 1.5em;
   font-weight: bold;
+  color: #1877f2;
 }
 
 .ProfileEmail,
@@ -31,12 +38,12 @@
 .ProfilePhone {
   margin-top: 8px;
   font-size: 0.9em;
-  color: #1c1e21; 
+  color: #1c1e21;
 }
 
 .ProfileEmail::before,
 .ProfileLocation::before,
 .ProfilePhone::before {
-  content: '\2022'; 
+  content: '\2022';
   margin-right: 5px;
 }
